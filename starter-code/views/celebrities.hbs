@@ -1,0 +1,11 @@
+<h2>Hall of Fame</h2>
+
+<a href="/celebrities/add">Add a Celebrity</a>
+
+{{#each celebrities}}
+  <a href="/celebrities/{{_id}}">
+    <div>{{name}}</div>
+  </a>
+  <a href="/celebrities/delete/{{_id}}">delete</a>
+  <a href="/celebrities/edit/{{_id}}">edit</a>
+{{/each}}
